@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #202731;
+    margin: 0;
+    font-family: "Poppins", "Sans-serif";
+    color: aliceblue;
+    overflow-y: schroll;
+}
+
+body::-webkit-scrollbar {
+    width: 10px; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 6px; 
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #202731; 
+}
+
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img {
+    margin-top: 10px;
+    max-width: 100px;
+    height: auto;
+    display: block; 
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    padding: 2px;
+}
+
+.navbar a{
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content : '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.heure {
+    margin-left: 40px;
+    text-align: start;
+    font-size: x-large;
+}
+
+.column1,
+.column2,
+.column3 {
+    float: left;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 30px;
+}
+
+
+
+.column1 {
+    background-color: #00ff00;
+}
+
+
+.column2 {
+    background-color: #ff0000;
+    
+}
+
+.column3 {
+    background-color: #ff9f38;
+    
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.tableau {
+    margin: 20px auto; 
+    max-width: 800px;
+}
+
+#accès {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f949;
+}
+
+tr:hover{
+    opacity: +0.5;
+}
