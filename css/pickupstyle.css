@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202731;
+    margin: 0;
+    font-family: "Poppins", "Sans-serif";
+    color: aliceblue;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #202731;
+}
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img {
+    margin-top: 10px;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    padding: 2px;
+}
+
+.navbar a {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.heure {
+    margin-left: 40px;
+    text-align: start;
+    font-size: x-large;
+}
+
+h2{
+    margin-left: 20px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    border: 2px solid #888;
+    border-radius: 10px; 
+    width: 97%;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover{
+    transform: scale(1.01);
+}
+
+.product img {
+    border-radius: 10px;
+    width: 100px;
+    margin-right: 30px;
+}
+
+.product-text {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-text h2 {
+    margin: 0;
+}
+
+.product-text .desc,
+.product-text .etat {
+    margin: 5px 0;
+}
+
+.indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px; /* Pour aligner à droite */
+}
+
+.indicator.dispo {
+    background-color: #00ff00;
+}
+
+.indicator.incomplet {
+    background-color: #ff9f38;
+}
+
+.indicator.indispo {
+    background-color: #ff0000;
+}
+
+.etat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
