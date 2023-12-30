@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/pickupstyle.css">
         <title>Accueil</title>
     </head>
     <body>
@@ -21,17 +21,52 @@
         </header>
         <h2>Gestion des stocks</h2>
             <section>
-                <div class="column1" id="C1">
-                    <h2>État de l'objet 1</h2>
-                    Objet disponible
+                <div class="product" id="product1">
+                    <img src="../img/tournevis-protwist-plat-3mm-l-203mm-facom.jpg">
+                    <div class="product-text">
+                        <h2>Tournevis</h2>
+                        <p class="desc">Description</p>
+                        <div class="etat">
+                            <p class="etat dispo">État : Disponible</p>
+                            <div class="indicator dispo"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="column2" id="C2">
-                    <h2>État de l'objet 2</h2>
-                    Objet pris par X le D à t
+
+                <div class="product" id="product2">
+                    <img src="../img/image_marteau.png" >
+                    <div class="product-text">
+                        <h2>Marteau</h2>
+                        <p class="desc">Description</p>
+                        <div class="etat">
+                            <p class="etat incomplet">État : Incomplet</p>
+                            <div class="indicator incomplet"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="column3" id="C3">
-                    <h2>État de l'objet 3</h2>
-                    Objet incomplet
+            
+                <div class="product" id="product3">
+                    <img src="../img/image_scie.webp">
+                    <div class="product-text">
+                        <h2>Scie</h2>
+                        <p class="desc">Description</p>
+                        <div class="etat">
+                            <p class="etat indispo">État : Indisponible</p>
+                            <div class="indicator indispo"></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product" id="product4">
+                    <img src="../img/image_cle_a_molette.png">
+                    <div class="product-text">
+                        <h2>Clé à molette</h2>
+                        <p class="desc">Description</p>
+                        <div class="etat">
+                            <p class="etat dispo">État : Disponible</p>
+                            <div class="indicator dispo"></div>
+                        </div>
+                    </div>
                 </div>
             </section>
         <script src="../js/JSProjet.js"></script>
