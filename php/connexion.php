@@ -1,14 +1,5 @@
 <?php
-$host = "localhost";
-$port = "5432";
-$dbname = "Rack";
-$user = "postgres";
-$password = "password";
 
-$connexion = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
+$dsn = 'mysql:host=localhost;dbname=rack;charset=utf8';
 
-if (!$connexion) {
-    die("La connexion a échoué");
-}
-echo "Connexion réussie";
-?>
+$pdo = new PDO($dsn, 'root' , ''); ?>
