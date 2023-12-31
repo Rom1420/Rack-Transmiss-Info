@@ -55,7 +55,7 @@ function updateClock() {
     const year = now.getFullYear();
 
     const digitalClock = document.getElementById('digital-clock');
-    digitalClock.textContent = `${formatTime(hours)}:${formatTime(minutes)}:${formatTime(seconds)} - ${formatDate(day)}/${formatDate(month)}/${year}`;
+    digitalClock.textContent = `${formatTime(hours)}:${formatTime(minutes)} - ${formatDate(day)}/${formatDate(month)}/${year}`;
 }
 
 //Pour un format à la bien
