@@ -15,7 +15,7 @@
             <nav class="navbar">
                 <a href="home.html">Acceuil</a>
                 <a href="pickup.php">Pick up</a>
-                <a href="utilisateurs.html">Utilisateurs</a>
+                <a href="utilisateurs.php">Utilisateurs</a>
             </nav>
             <div class="clock-container">
                 <div class="digital-clock" id="digital-clock"></div>
@@ -28,28 +28,11 @@
             <table border=1>
                 <tr>
                     <td>Utilisateur</td>
-                    <td>Objet</td>
-                    <td>Date</td>
-                    <td>Heure</td>
+                    <td>Nombre objets</td>
+                    <td>Date et heure</td>
+                    <td>Nom objet</td>
                 </tr>
-                <tr>
-                    <td>X</td>
-                    <td>1 pris</td>
-                    <td>D</td>
-                    <td>t</td>
-                </tr>
-                <tr>
-                    <td>Y</td>
-                    <td>2 pris</td>
-                    <td>D</td>
-                    <td>t'</td>
-                </tr>
-                <tr>
-                    <td>Y</td>
-                    <td>2 reposé</td>
-                    <td>D</td>
-                    <td>t''</td>
-                </tr>
+                <?php include('../php/afficher_utilisateurs.php'); ?>
             </table>
         </div>
         <script src="../js/JSProjet.js"></script>
