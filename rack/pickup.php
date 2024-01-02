@@ -15,11 +15,7 @@
             <nav class="navbar">
                 <a href="home.html">Acceuil</a>
                 <a href="pickup.php">Pick up</a>
-<<<<<<< HEAD
                 <a href="utilisateurs.php">Utilisateurs</a>
-=======
-                <a href="utilisateurs.html">Utilisateurs</a>
->>>>>>> 62023dbadb87d091248e20fdc2ad6fd30e5ccf4a
             </nav>
             <div class="clock-container">
                 <div class="digital-clock" id="digital-clock"></div>
